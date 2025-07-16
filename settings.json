@@ -1,0 +1,11 @@
+{
+    "window.commandCenter": true,
+    "workbench.colorTheme": "Cursor Dark Midnight",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "go.buildTags": "testutil tests_group_all",
+    "go.gopath": "",
+    "go.buildFlags": ["-v"],
+    "go.delveConfig": {}
+}

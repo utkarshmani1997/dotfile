@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Xray",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "/Users/utkarshm/workspace/src/jfrog.com/xray/xray/backend/test/runner/goroutines/start_xray_dev_goroutines.go",
+            "env": {
+                "XRAY_VERSION": "3.999.0",
+                "XRAY_REVISION": "3.x-dev",
+                "JF_SERVER_LOGGING_APPLICATION_LEVEL": "info"
+            },
+            "args": [
+                "--DevMode"
+            ],
+            "buildFlags": "-tags=testutil"
+        }
+    ]
+}

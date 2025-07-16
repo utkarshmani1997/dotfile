@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "Run Xray",
+        "type": "shell",
+        "command": "zsh",
+        "args": [
+            "-c",
+            "export XRAY_VERSION=3.999.0; export XRAY_REVISION=3.x-dev;export JF_SERVER_LOGGING_APPLICATION_LEVEL=info; cd /Users/utkarshm/workspace/src/jfrog.com/xray/xray/backend/test/runner/goroutines; go run -tags testutil,tests_group_all start_xray_dev_goroutines.go --DevMode"
+        ],
+        "group": "build",
+        "presentation": {
+            "reveal": "always",
+            "echo": true,
+            "focus": true,
+            "panel": "shared"
+        }
+    }]
+}
